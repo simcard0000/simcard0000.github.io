@@ -1,0 +1,41 @@
+html{
+    background-color:#e3e3e3;
+}
+a{
+    color:black;
+}
+#particles-js canvas{
+    opacity: 1;
+    vertical-align: bottom;
+    z-index: -9999;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%, 50%;
+    position: fixed;
+}
+#siteTitle{
+    font-family: 'Nunito', sans-serif;
+    font-size: 350%;
+    color: #ed7d31;
+    margin: 0;
+    padding: 0;
+}
+#officialRunner{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 120%;
+    margin: 0;
+    padding: 0;
+}
+#statRunner{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 120%;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
