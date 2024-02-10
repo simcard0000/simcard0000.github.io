@@ -4,6 +4,6 @@ export default async (request, context) => {
     const response = await fetch("https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?format=json&key=" + api_key + "&steamid=" + username)
     const response_json = await response.json();
     console.log(response_json);
-    console.log(...response);
+    console.log(response.headers);
     return response;
 }
