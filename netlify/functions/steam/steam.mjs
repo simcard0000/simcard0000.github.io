@@ -10,5 +10,5 @@ export default async (request, context) => {
         statusText: "OK",
         headers
     }
-    return new Response(response_json, options);
+    return new Response(JSON.stringify(response_json), options);
 }
