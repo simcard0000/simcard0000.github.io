@@ -16,7 +16,7 @@
     width: 50%;
     height: calc(100vh - 60px);
     scrollbar-gutter: stable;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #scrollPad {
@@ -30,7 +30,7 @@
     justify-content: center;
     width: 50%;
     height: calc(100vh - 60px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 iframe {
@@ -47,8 +47,7 @@ iframe {
 
 #projectsContainer {
     max-width: 100%;
-    overflow-x: scroll;
-    /* change to collapse year or explanation? */
+    overflow-x: auto;
 }
 
 #projectsTable {
@@ -229,7 +228,7 @@ img:not(.extraImage) {
         width: 100%;
         height: auto;
         scrollbar-gutter: stable;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     #backgroundHalf {
@@ -240,6 +239,6 @@ img:not(.extraImage) {
         width: 100%;
         height: auto;
         aspect-ratio: 1;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
