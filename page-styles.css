@@ -30,13 +30,14 @@
     justify-content: center;
     width: 50%;
     height: calc(100vh - 60px);
-    overflow-y: auto;
 }
 
-iframe {
+#starmap {
     font-family: "Inter", sans-serif;
-    width: 75%;
+    width: 65%;
     aspect-ratio: 1;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 /* PROJECTS SECTION ALIGNMENT */
@@ -239,6 +240,5 @@ img:not(.extraImage) {
         width: 100%;
         height: auto;
         aspect-ratio: 1;
-        overflow-y: auto;
     }
 }

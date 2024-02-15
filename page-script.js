@@ -14,6 +14,30 @@ var latestGameTitle = document.getElementById("latestGameTitle");
 var latestGameWeeks = document.getElementById("latestGameWeeks");
 var latestGameAll = document.getElementById("latestGameAll");
 
+var planetarium;
+
+S(document).ready(function () {
+
+    planetarium = S.virtualsky({
+        id: 'starmap',
+        projection: 'polar',
+        longitude: -80.5204,
+        latitude: 43.4643,
+        fontsize: "15px",
+        gradient: false,
+        negative: true,
+        color: "rgb(232,63,96)",
+        keyboard: true,
+        constellations: true,
+        showstarlabels: true,
+        scalestars: 1,
+        magnitude: 5,
+        cardinalpoints: false,
+        live: true
+    });
+
+});
+
 function startUp() {
     renderProjectsTable([]);
     getLatestSongInfo();
