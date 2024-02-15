@@ -1,0 +1,3 @@
+[submodule "VirtualSky"]
+	path = VirtualSky
+	url = https://github.com/slowe/VirtualSky
