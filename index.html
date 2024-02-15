@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Simran Thind" />
+		<meta
+			name="description"
+			content="Simran's personal website!"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Simran Thind</title>
+		<link rel="icon" href="./assets/site-icons/sparkle-site-icon.gif">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="page-styles.css" />
+	</head>
+	<body onload="startUp()">
+		<div id="mainBox">
+			<div id="mainBoxContent">
+				<div id="textHalf">
+					<div id="scrollPad">
+						<h1>Simran Thind</h1>
+						<div id="aboutContent">
+							<p>Software Engineering student specializing in Human-Computer Interaction at the <a href="https://uwaterloo.ca/future-students/programs/software-engineering" target="_blank">University of Waterloo</a>. Currently looking for Summer 2024 internships.
+								View my resume <a href="https://drive.google.com/file/d/1agbOpH9veKtwaxW2eltL4BJ4ghqRFwsd/preview" target="_blank">here</a>.
+							</p>
+						</div>
+						<div id="linksContent">
+							<p class="bold">✦ Links</p>
+							<div id="linksList">
+								<!--GitHub-->
+								<a href="https://github.com/simcard0000" target="_blank" class="small-link">
+									<div class="media">
+										<img width="15" height="15" src="./assets/media-icons/GitHub-Mark-120px-plus.png" alt="GitHub: @simcard0000"/>
+										<p>GitHub</p>
+									</div>
+								</a>
+								<!--Devpost-->
+								<a href="https://devpost.com/simcard0000" target="_blank" class="small-link">
+									<div class="media">
+										<img width="17" height="17" src="./assets/media-icons/devpost-128.png" alt="Devpost: @simcard0000"/>
+										<p>Devpost</p>
+									</div>
+								</a>
+								<!--Medium-->
+								<a href="https://medium.com/@simran.thind" target="_blank" class="small-link">
+									<div class="media">
+										<img width="20" height="13" src="./assets/media-icons/Medium-Symbol-Black-RGB@4x.png" alt="Medium: @simran.thind"/>
+										<p>Medium</p>
+									</div>
+								</a>
+								<!--Product Hunt-->
+								<a href="https://www.producthunt.com/@simcard0000" target="_blank" class="small-link">
+									<div class="media">
+										<img width="15" height="15" src="./assets/media-icons/product-hunt-logo-black-960.png" alt="ProductHunt: @simcard0000"/>
+										<p>Product Hunt</p>
+									</div>								
+								</a>
+								<!--Are.na-->
+								<a href="https://www.are.na/simran-thind" target="_blank" class="small-link">
+									<div class="media">
+										<img width="22" height="13" src="./assets/media-icons/arena-logo.webp" alt="Are.na: Simran Thind"/>
+										<p>Are.na</p>
+									</div>
+								</a>
+								<!--LinkedIn-->
+								<a href="https://www.linkedin.com/in/simran-thind0000/" target="_blank" class="small-link">
+									<div class="media">
+										<img width="16" height="16" src="./assets/media-icons/linkedin-icon-black.png" alt="LinkedIn: @simran-thind0000"/>
+										<p>LinkedIn</p>
+									</div>
+								</a>
+								<!--AngelList-->
+								<a href="https://angel.co/u/simcard0000" target="_blank" class="small-link">
+									<div class="media">
+										<img width="10" height="15" src="./assets/media-icons/AngelList_Black_Victory_Hand.png" alt="AngelList: @simcard0000"/>
+										<p>AngelList</p>
+									</div>
+								</a>
+								<!--read.cv-->
+								<a href="https://read.cv/simcard0000" target="_blank" class="small-link">
+									<div class="media">
+										<img width="15" height="15" src="./assets/media-icons/read_cv.ico" alt="read.cv: @simcard0000"/>
+										<p>Read.CV</p>
+									</div>
+								</a>
+								<!--SE Webring-->
+								<a href="https://se-webring.xyz/" target="_blank" class="small-link">
+									<div class="media">
+										<img width="22" height="15" src="./assets/media-icons/logo_webring_b.png" alt="SE Webring"/>
+										<p>SE Webring</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div id="projectsContent">
+							<p class="bold">✦ Projects</p>
+							<div id="projectsSection">
+								<div id="projectsFiltering">
+									<p>Artifacts from school, work, and extra-curriculars. Filter by type: </p>
+									<div id="projectTypeOptions">
+										<div class="check">
+											<input type="checkbox" id="cbCoding" name="cbCoding" onchange="typeFilterChange()">
+											<label for="cbCoding">coding</label>
+										</div>
+										<div class="check">
+											<input type="checkbox" id="cbDesign" name="cbDesign" onchange="typeFilterChange()">
+											<label for="cbDesign">design</label>
+										</div>
+										<div class="check">
+											<input type="checkbox" id="cbWriting" name="cbWriting" onchange="typeFilterChange()">
+											<label for="cbWriting">writing</label>
+										</div>
+										<div class="check">
+											<input type="checkbox" id="cbFont" name="cbFont" onchange="typeFilterChange()">
+											<label for="cbFont">font</label>
+										</div>
+										<div class="check">
+											<input type="checkbox" id="cbArchival" name="cbArchival" onchange="typeFilterChange()">
+											<label for="cbArchival">archival</label>
+										</div>
+									</div>
+								</div>
+								<div id="projectsContainer">
+									<table id="projectsTable">
+										<thead id="thead">
+											<tr>
+												<th id="titleColumn">title</th>
+												<th id="aboutColumn">about</th>
+												<th id="yearColumn">year</th>
+											</tr>
+										</thead>
+										<!--insert projects in tbody here-->
+									</table>
+								</div>
+							</div>
+						</div>
+						<div id="extrasContent">
+							<p class="bold">✦ Extras</p>
+							<div class="extraBox">
+								<img class="extraImage" id="latestSongCover" alt="❔" />
+								<div class="extraInfo">
+									<p id="latestSongTitle">Loading...</p>
+									<p id="latestSongArtist">Loading...</p>
+									<p id="latestSongTime">Loading...</p>
+								</div>
+							</div>
+							<div class="extraBox">
+								<img class="extraImage" id="latestGameCover" alt="❔" />
+								<div class="extraInfo">
+									<p id="latestGameTitle">Loading...</p>
+									<p id="latestGameWeeks">Loading...</p>
+									<p id="latestGameAll">Loading...</p>
+								</div>
+							</div>
+						</div>
+						<noscript>
+							<style type="text/css">
+								#aboutContent, #projectsContent, #linksContent, #extrasContent {
+									display:none;
+								}
+							</style>
+							<div id="noscriptContent">
+								<p>This site would look and work a lot better with JavaScript being able to run. Please enable running all scripts for this website in your browser.</p>
+							</div>
+						</noscript>
+					</div>
+				</div>
+				<div id="backgroundHalf">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://slowe.github.io/VirtualSky/embed?longitude=-80.5204&latitude=43.4643&fontsize=15px&gradient=false&projection=polar&negative=true&color=rgb(232,63,96)&keyboard=true&constellations=true&showstarlabels=true&scalestars=1&magnitude=5&cardinalpoints=false&live=true" allowTransparency="true"></iframe>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="/page-script.js"></script> 
