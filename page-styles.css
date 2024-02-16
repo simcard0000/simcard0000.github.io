@@ -30,14 +30,15 @@
     justify-content: center;
     width: 50%;
     height: calc(100vh - 60px);
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 #starmap {
     font-family: "Inter", sans-serif;
-    width: 65%;
+    width: 70%;
     aspect-ratio: 1;
-    overflow-y: auto;
-    overflow-x: auto;
+    padding: 0;
 }
 
 /* PROJECTS SECTION ALIGNMENT */
@@ -233,12 +234,6 @@ img:not(.extraImage) {
     }
 
     #backgroundHalf {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1;
+        display: none;
     }
 }
