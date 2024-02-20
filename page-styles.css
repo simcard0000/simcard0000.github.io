@@ -218,7 +218,7 @@ img:not(.extraImage) {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (orientation: portrait),
+@media all and (orientation: portrait),
 (max-aspect-ratio: 1.2) {
     #mainBoxContent {
         display: flex;
