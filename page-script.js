@@ -179,7 +179,7 @@ const projectInfo = [
         "title": "Sims' Deep Pink",
         "icon": "💗",
         "website": "https://github.com/simcard0000/sims-deep-pink",
-        "about": "dark theme for Firefox with pink highlights",
+        "about": "dark theme for Mozilla products with pink highlights",
         "year": 2022,
         "type": ["design"],
     },
