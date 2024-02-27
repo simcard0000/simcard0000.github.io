@@ -1,8 +1,4 @@
 /* ON LOAD */
-let songTitle = "...loading";
-let songArtist = "...loading";
-let songCover = "...loading";
-let songTime = "...loading";
 
 var latestSongCover = document.getElementById("latestSongCover");
 var latestSongTitle = document.getElementById("latestSongTitle");
@@ -14,10 +10,12 @@ var latestGameTitle = document.getElementById("latestGameTitle");
 var latestGameWeeks = document.getElementById("latestGameWeeks");
 var latestGameAll = document.getElementById("latestGameAll");
 
+var starmap = document.getElementById("starmap");
 var planetarium;
 
-S(document).ready(function () {
-
+function setVirtualSky() {
+    starmap.replaceChildren();
+    planetarium = "";
     planetarium = S.virtualsky({
         id: 'starmap',
         projection: 'polar',
@@ -35,13 +33,19 @@ S(document).ready(function () {
         cardinalpoints: false,
         live: true
     });
+    planetarium.credit = false;
+    return;
+}
 
+S(document).ready(function () {
+    setVirtualSky();
 });
 
 function startUp() {
     renderProjectsTable([]);
     getLatestSongInfo();
     getLatestGameInfo();
+    return;
 }
 
 async function getLatestSongInfo() {
@@ -50,9 +54,11 @@ async function getLatestSongInfo() {
     const response_json = await response.json();
     // Parsing latest song data:
     const latestSong = response_json.recenttracks.track[0];
+    var songTime = "";
+    var songTitle = "";
     try {
         if (latestSong["@attr"].nowplaying === "true") {
-            songTime = "now playing"
+            songTime = "now playing";
         }
     } catch (error) {
         songTime = latestSong.date["#text"] + " GMT";
@@ -62,21 +68,21 @@ async function getLatestSongInfo() {
     } else {
         songTitle = latestSong.name + " - " + latestSong.album["#text"];
     }
-    songArtist = latestSong.artist.name;
-    songCover = latestSong.image[3]["#text"];
+    const songArtist = latestSong.artist.name;
+    const songCover = latestSong.image[3]["#text"];
     // Changing elements on website:
     latestSongCover.src = songCover;
     latestSongCover.alt = songTitle;
     latestSongTitle.innerHTML = "Latest song: <b>" + songTitle + "</b>";
     latestSongArtist.innerHTML = "Artist: <b>" + songArtist + "</b>";
     latestSongTime.innerHTML = "When: <b>" + songTime + "</b>";
+    return;
 }
 
 async function getLatestGameInfo() {
     // Getting latest game information:
     const response = await fetch("https://simranthind.me/.netlify/functions/steam");
     const response_json = await response.json();
-    console.log(response_json);
     // Parsing latest game data:
     const latestGame = response_json.response.games[0];
     const gameAppId = latestGame.appid;
@@ -89,8 +95,9 @@ async function getLatestGameInfo() {
     latestGameCover.src = "http://media.steampowered.com/steamcommunity/public/images/apps/" + gameAppId + "/" + gameImage + ".jpg";
     latestGameCover.alt = gameName;
     latestGameTitle.innerHTML = "Latest game: <b>" + gameName + "</b>";
-    latestGameWeeks.innerHTML = "Time played in the last 2 weeks: <b>" + gameWeeks + " hours</b>"
-    latestGameAll.innerHTML = "Time played total: <b>" + gameAll + " hours</b>"
+    latestGameWeeks.innerHTML = "Time played in the last 2 weeks: <b>" + gameWeeks + " hours</b>";
+    latestGameAll.innerHTML = "Time played total: <b>" + gameAll + " hours</b>";
+    return;
 }
 
 /* PROJECT SECTION */
@@ -305,3 +312,10 @@ function typeFilterChange() {
     renderProjectsTable(selectedTypes);
     return;
 }
+
+/* UPDATING VIRTUAL SKY BASED ON SCREEN RESIZING */
+
+window.addEventListener("resize", () => {
+    setVirtualSky();
+    return;
+});

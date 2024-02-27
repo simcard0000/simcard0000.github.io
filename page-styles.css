@@ -30,8 +30,7 @@
     justify-content: center;
     width: 50%;
     height: calc(100vh - 60px);
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow: scroll;
 }
 
 #starmap {
@@ -218,8 +217,7 @@ img:not(.extraImage) {
 }
 
 /* MEDIA QUERIES */
-@media all and (orientation: portrait),
-(max-aspect-ratio: 1.2) {
+@media all and (orientation: portrait) and (max-aspect-ratio: 1.2) {
     #mainBoxContent {
         display: flex;
         flex-direction: column;
@@ -231,9 +229,15 @@ img:not(.extraImage) {
         height: auto;
         scrollbar-gutter: stable;
         overflow-y: auto;
+        margin-bottom: 5px;
     }
 
     #backgroundHalf {
-        display: none;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #starmap {
+        width: 90%;
     }
 }
