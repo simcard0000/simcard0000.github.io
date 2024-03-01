@@ -114,9 +114,17 @@ const projectInfo = [
         "title": "simranthind.me",
         "icon": "🌃",
         "website": "https://github.com/simcard0000/simcard0000.github.io",
-        "about": "this very website; pure HTML + CSS + JS",
+        "about": "this very website; pure HTML + CSS + JS; featured on <a href=\"https://gossipsweb.net\" target=\"_blank\">Gossip's Web<a/>",
         "year": 2024,
         "type": ["coding"],
+    },
+    {
+        "title": "Pokémon Showdown! - Future Nostalgia v1.0",
+        "icon": "🕹️",
+        "website": "https://pokemon-tournament.simranthind.me/",
+        "about": "W24 online fan tournament",
+        "year": 2024,
+        "type": ["coding", "design"]
     },
     {
         "title": "LinguaFlow",
@@ -198,6 +206,14 @@ const projectInfo = [
         "year": 2022,
         "type": ["archival"],
     },
+    // {    Add once Medium article has been edited:
+    //     "title": "Thinking About Accessibility and Web Design",
+    //     "icon": "✏️",
+    //     "website": "",
+    //     "about": "analyzing W3C guidelines - UW work term report",
+    //     "year": 2021,
+    //     "type": ["writing"],
+    // },
     {
         "title": "Hack the North: Building projects effectively at hackathons",
         "icon": "🛠️",
