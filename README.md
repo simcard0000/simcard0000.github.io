@@ -5,7 +5,9 @@
 🌃 Simran's personal website!
 
 ### About
-This is v4 of my personal website, wherein I also re-uploaded various site files.
+This is `v4` of my personal website, wherein I also re-uploaded various site files. This is a handmade site hosted on GitHub (via GitHub pages) and deployed and built through Netlify - a basic architecture diagram is provided below.
+
+![Simran's personal website architecture diagram](https://github.com/simcard0000/simcard0000.github.io/blob/main/assets/personal-site-arch.png)
 
 ### Credits
 Coming soon!
