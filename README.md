@@ -5,12 +5,13 @@
 🌃 Simran's personal website!
 
 ### About
-This is `v4` of my personal website, wherein I also re-uploaded various site files. This is a handmade site hosted on GitHub (via GitHub pages) and deployed and built through Netlify - a basic architecture diagram is provided below.
+This is `v4` of my personal website, wherein I also re-uploaded various site files. This is a handmade site hosted on GitHub (via [GitHub Pages](https://pages.github.com/)) as well as deployed, built, and hosted through [Netlify](https://www.netlify.com/) - a basic architecture diagram is provided below.
 
 ![Simran's personal website architecture diagram](https://github.com/simcard0000/simcard0000.github.io/blob/main/assets/personal-site-arch.png)
 
 ### Credits
-Coming soon!
+* The star chart on the website is generated via [VirtualSky](https://slowe.github.io/VirtualSky/), a library by [Stuart Lowe](https://github.com/slowe/VirtualSky) (and powered by  [Las Cumbres Observatory](https://lco.global/)).
+* The latest game and song information on the website is from [Steam](https://store.steampowered.com/) and [Last.fm](https://www.last.fm/), respectively. Steam has a [Web API](https://developer.valvesoftware.com/wiki/Steam_Web_API) with a function where one can
 
 ~
 
