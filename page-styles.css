@@ -4,12 +4,14 @@
     padding: 0;
     margin: 0;
     min-width: 100%;
+    -webkit-overflow-scrolling: touch;
 }
 
 #mainBoxContent {
     display: flex;
     flex-direction: row;
     padding: 20px;
+    -webkit-overflow-scrolling: touch;
 }
 
 #textHalf {
@@ -17,6 +19,7 @@
     height: calc(100vh - 60px);
     scrollbar-gutter: stable;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 #scrollPad {
@@ -31,6 +34,7 @@
     width: 50%;
     height: calc(100vh - 60px);
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 #starmap {
@@ -227,7 +231,6 @@ img:not(.extraImage) {
     #textHalf {
         width: 100%;
         height: auto;
-        overflow-y: auto;
         margin-bottom: 5px;
     }
 
