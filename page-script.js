@@ -119,6 +119,14 @@ const projectInfo = [
         "type": ["coding"],
     },
     {
+        "title": "Recipes",
+        "icon": "🏺",
+        "website": "https://github.com/simcard0000/recipes",
+        "about": "dishes from my family and other sources",
+        "year": 2024,
+        "type": ["archival"]
+    },
+    {
         "title": "Pokémon Showdown! - Future Nostalgia v1.0",
         "icon": "🕹️",
         "website": "https://pokemon-tournament.simranthind.me/",
