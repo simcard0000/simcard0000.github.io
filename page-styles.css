@@ -222,6 +222,14 @@ img:not(.extraImage) {
 
 /* MEDIA QUERIES */
 @media all and (orientation: portrait) and (max-aspect-ratio: 1.2) {
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+    }
+
     #mainBoxContent {
         display: flex;
         flex-direction: column;
@@ -245,5 +253,13 @@ img:not(.extraImage) {
 
     #scrollPad {
         margin-right: 0;
+    }
+
+    #latestSongCover {
+        width: 90%;
+    }
+
+    #latestGameCover {
+        width: 90%;
     }
 }
