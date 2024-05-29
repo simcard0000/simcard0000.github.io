@@ -1,5 +1,8 @@
 /* ON LOAD */
 
+var mainBoxContent = document.getElementById("mainBoxContent")
+mainBoxContent.focus()
+
 var latestSongCover = document.getElementById("latestSongCover");
 var latestSongTitle = document.getElementById("latestSongTitle");
 var latestSongArtist = document.getElementById("latestSongArtist");

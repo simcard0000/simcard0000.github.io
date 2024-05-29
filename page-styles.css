@@ -17,7 +17,6 @@
     height: calc(100vh - 60px);
     scrollbar-gutter: stable;
     overflow-y: auto;
-    overscroll-behavior: none;
 }
 
 #scrollPad {
@@ -32,7 +31,6 @@
     width: 50%;
     height: calc(100vh - 60px);
     overflow: scroll;
-    overscroll-behavior: none;
 }
 
 #starmap {
@@ -198,6 +196,9 @@ img:not(.extraImage) {
 }
 
 .extraImage {
+    max-height: unset;
+    max-width: unset;
+    padding-bottom: unset;
     padding: 0;
 }
 
@@ -220,15 +221,6 @@ img:not(.extraImage) {
 
 /* MEDIA QUERIES */
 @media all and (orientation: portrait) and (max-aspect-ratio: 1.2) {
-
-    html,
-    body {
-        height: 100%;
-        width: 100%;
-        overflow: auto;
-        overscroll-behavior: none;
-    }
-
     #mainBoxContent {
         display: flex;
         flex-direction: column;
@@ -236,13 +228,14 @@ img:not(.extraImage) {
     }
 
     #textHalf {
-        width: 95%;
+        width: 100%;
         height: auto;
         margin-bottom: 5px;
+        overflow-y: hidden;
     }
 
     #backgroundHalf {
-        width: 95%;
+        width: 100%;
         height: fit-content;
     }
 
@@ -254,11 +247,7 @@ img:not(.extraImage) {
         margin-right: 0;
     }
 
-    #latestSongCover {
-        width: 4.8em;
-    }
-
-    #latestGameCover {
-        width: 4.8em;
+    .extraBox {
+        width: 95%;
     }
 }
