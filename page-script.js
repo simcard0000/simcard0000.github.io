@@ -133,7 +133,7 @@ const projectInfo = [
         "title": "Pokémon Showdown! - Future Nostalgia v1.0",
         "icon": "🕹️",
         "website": "https://pokemon-tournament.simranthind.me/",
-        "about": "W24 online fan tournament",
+        "about": "online fan tournament (in-progress)",
         "year": 2024,
         "type": ["coding", "design"]
     },
