@@ -217,6 +217,30 @@ const projectInfo = [
         "year": 2022,
         "type": ["archival"],
     },
+    {
+        "title": "How to set up a developer environment for Mattermost with Gitpod | #hacktoberfest",
+        "icon": "🎥",
+        "website": "https://www.youtube.com/watch?v=LgQ2Z_GelYQ",
+        "about": "one of 3 devrel videos made for Mattermost; first time producing content like this :)",
+        "year": 2022,
+        "type": ["writing, archival"]
+    },
+    {
+        "title": "Writing your first E2E test for Mattermost | #hacktoberfest",
+        "icon": "🎥",
+        "website": "https://www.youtube.com/watch?v=mLbzKSGZv4A",
+        "about": "second devrel video made for Mattermost",
+        "year": 2022,
+        "type": ["writing, archival"]
+    },
+    {
+        "title": "Applying AIOps: Sending alerts from Moogsoft to Mattermost",
+        "icon": "🎥",
+        "website": "https://www.youtube.com/watch?v=-yXGIilnkiw",
+        "about": "third devrel video made for Mattermost",
+        "year": 2022,
+        "type": ["writing, archival"]
+    },
     // {    Add once Medium article has been edited:
     //     "title": "Thinking About Accessibility and Web Design",
     //     "icon": "✏️",
