@@ -219,6 +219,13 @@ img:not(.extraImage) {
     padding-bottom: 0;
 }
 
+#myCarbonBadge #wcb.carbonbadge {
+    display: flex;
+    flex-direction: row;  
+    --b1:#e83f60;
+	--b2:#e83f60;
+}
+
 /* MEDIA QUERIES */
 @media all and (orientation: portrait) and (max-aspect-ratio: 1.2) {
     #mainBoxContent {
