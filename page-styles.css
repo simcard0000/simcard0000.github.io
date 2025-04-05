@@ -227,7 +227,7 @@ img:not(.extraImage) {
 }
 
 /* MEDIA QUERIES */
-@media all and (orientation: portrait) and (max-aspect-ratio: 1.2) {
+@media all and (orientation: portrait), (max-aspect-ratio: 1.2) {
     #mainBoxContent {
         display: flex;
         flex-direction: column;
