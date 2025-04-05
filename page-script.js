@@ -118,40 +118,8 @@ const projectInfo = [
         "icon": "🌃",
         "website": "https://github.com/simcard0000/simcard0000.github.io",
         "about": "this very website; pure HTML + CSS + JS; featured on <a href=\"https://gossipsweb.net\" target=\"_blank\">Gossip's Web<a/>",
-        "year": "ongoing",
+        "year": 2024,
         "type": ["coding"],
-    },
-    {
-        "title": "Pokémon Showdown! - Future Nostalgia v1.0",
-        "icon": "🕹️",
-        "website": "https://pokemon-tournament.simranthind.me/",
-        "about": "online fan tournament (in-progress)",
-        "year": ongoing,
-        "type": ["coding", "design"]
-    },
-    {
-        "title": "CrochetCraft",
-        "icon": "🧶",
-        "website": "https://crochetcraft.jtai.ca",
-        "about": "SE 491/FYDP group project: 3D modelling of crochet patterns",
-        "year": 2025,
-        "type": ["coding"],
-    },
-    {
-        "title": "Rosie",
-        "icon": "🌹",
-        "website": "https://cs492-rosie.simranthind.me/",
-        "about": "CS 492 group project: short interactive fiction game on AI + dating",
-        "year": 2025,
-        "type": ["coding", "writing", "archival"]
-    },
-    {
-        "title": "Music 275 Log",
-        "icon": "🦋",
-        "website": "https://music275-log.simranthind.me",
-        "about": "journal for W25's Music & Technology class",
-        "year": 2025,
-        "type": ["writing", "archival"]
     },
     {
         "title": "Recipes",
@@ -162,10 +130,18 @@ const projectInfo = [
         "type": ["archival"]
     },
     {
+        "title": "Pokémon Showdown! - Future Nostalgia v1.0",
+        "icon": "🕹️",
+        "website": "https://pokemon-tournament.simranthind.me/",
+        "about": "online fan tournament (in-progress)",
+        "year": 2024,
+        "type": ["coding", "design"]
+    },
+    {
         "title": "LinguaFlow",
         "icon": "🖱️",
         "website": "https://github.com/simcard0000/click-crafters",
-        "about": "CS 449: Human-Computer Interaction design group project",
+        "about": "CS 449: Human-Computer Interaction design project",
         "year": 2023,
         "type": ["design", "writing"]
     },
@@ -186,6 +162,22 @@ const projectInfo = [
         "type": ["archival"],
     },
     {
+        "title": "Ramp Frontend Challenge",
+        "icon": "💸",
+        "website": "https://codesandbox.io/s/github/simcard0000/ramp-frontend-challenge",
+        "about": "tiny React app made while applying for a position",
+        "year": 2022,
+        "type": ["coding"],
+    },
+    {
+        "title": "Cherry Picking",
+        "icon": "🍒",
+        "website": "https://cherrypicking.digital",
+        "about": "ongoing curation of music between friends",
+        "year": 2022,
+        "type": ["coding", "design"],
+    },
+    {
         "title": "SE Webring",
         "icon": "💜",
         "website": "https://se-webring.xyz",
@@ -194,12 +186,36 @@ const projectInfo = [
         "type": ["coding", "design"],
     },
     {
+        "title": "Imaginary Flowers",
+        "icon": "🌼",
+        "website": "https://github.com/simcard0000/imaginary-flowers",
+        "about": "ongoing art created with <a href=\"https://www.kurtz-fernhout.com/PlantStudio/\" target=\"_blank\">Kurtz-Fernhout's PlantStudio Botanical Illustration application</a> and Paint3D",
+        "year": 2022,
+        "type": ["design"]
+    },
+    {
         "title": "Metaflop Font Derivations",
         "icon": "✒️",
         "website": "https://github.com/simcard0000/metaflop-font-derivations",
         "about": "group of custom fonts made through <a href=\"https://www.metaflop.com/modulator\" target=\"_blank\">Metaflop's modulator</a>",
         "year": 2022,
         "type": ["font"],
+    },
+    {
+        "title": "Sims' Deep Pink",
+        "icon": "💗",
+        "website": "https://github.com/simcard0000/sims-deep-pink",
+        "about": "dark theme for Mozilla products with pink highlights",
+        "year": 2022,
+        "type": ["design"],
+    },
+    {
+        "title": "Theoretical Computer Science Cheat Sheet",
+        "icon": "♾️",
+        "website": "https://github.com/simcard0000/theoretical-computer-science-cheat-sheet",
+        "about": "expanding out Steve Seiden's Theoretical Computer Science Cheat Sheet",
+        "year": 2022,
+        "type": ["archival"],
     },
     {
         "title": "How to set up a developer environment for Mattermost with Gitpod | #hacktoberfest",
@@ -224,46 +240,6 @@ const projectInfo = [
         "about": "third devrel video made for Mattermost",
         "year": 2022,
         "type": ["writing", "archival"]
-    },
-    {
-        "title": "Cherry Picking",
-        "icon": "🍒",
-        "website": "https://cherrypicking.digital",
-        "about": "ongoing curation of music between friends",
-        "year": 2022,
-        "type": ["coding", "design"],
-    },
-    {
-        "title": "Ramp Frontend Challenge",
-        "icon": "💸",
-        "website": "https://codesandbox.io/s/github/simcard0000/ramp-frontend-challenge",
-        "about": "tiny React app made while applying for a position",
-        "year": 2022,
-        "type": ["coding"],
-    },
-    {
-        "title": "Imaginary Flowers",
-        "icon": "🌼",
-        "website": "https://github.com/simcard0000/imaginary-flowers",
-        "about": "ongoing art created with <a href=\"https://www.kurtz-fernhout.com/PlantStudio/\" target=\"_blank\">Kurtz-Fernhout's PlantStudio Botanical Illustration application</a> and Paint3D",
-        "year": 2022,
-        "type": ["design"]
-    },
-    {
-        "title": "Sims' Deep Pink",
-        "icon": "💗",
-        "website": "https://github.com/simcard0000/sims-deep-pink",
-        "about": "dark theme for Mozilla products with pink highlights",
-        "year": 2022,
-        "type": ["design"],
-    },
-    {
-        "title": "Theoretical Computer Science Cheat Sheet",
-        "icon": "♾️",
-        "website": "https://github.com/simcard0000/theoretical-computer-science-cheat-sheet",
-        "about": "expanding out Steve Seiden's Theoretical Computer Science Cheat Sheet",
-        "year": 2022,
-        "type": ["archival"],
     },
     // {    Add once Medium article has been edited:
     //     "title": "Thinking About Accessibility and Web Design",
