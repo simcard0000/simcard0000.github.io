@@ -86,20 +86,30 @@ async function getLatestGameInfo() {
     // Getting latest game information:
     const response = await fetch("https://simranthind.me/.netlify/functions/steam");
     const response_json = await response.json();
-    // Parsing latest game data:
-    const latestGame = response_json.response.games[0];
-    const gameAppId = latestGame.appid;
-    const gameImage = latestGame.img_icon_url;
-    const gameName = latestGame.name;
-    // The playtime numbers are in minutes:
-    const gameWeeks = Math.round(parseInt(latestGame.playtime_2weeks) / 60);
-    const gameAll = Math.round(parseInt(latestGame.playtime_forever) / 60);
-    // Changing elements on website:
-    latestGameCover.src = "http://media.steampowered.com/steamcommunity/public/images/apps/" + gameAppId + "/" + gameImage + ".jpg";
-    latestGameCover.alt = gameName;
-    latestGameTitle.innerHTML = "Latest game: <b>" + gameName + "</b>";
-    latestGameWeeks.innerHTML = "Time played in the last 2 weeks: <b>" + gameWeeks + " hours</b>";
-    latestGameAll.innerHTML = "Time played total: <b>" + gameAll + " hours</b>";
+    // Check amount of Steam games played in the last 2 weeks:
+    const gameAmount = response_json.response.total_count;
+    if (gameAmount == 0) {
+        latestGameTitle.innerHTML = "No Steam games played in the last 2 weeks!";
+        latestGameTitle.style.marginBottom = "-10px";
+        latestGameWeeks.style.display = "none";
+        latestGameAll.style.display = "none";
+        latestGameCover.style.display = "none";
+    } else {
+        // Parsing latest game data:
+        const latestGame = response_json.response.games[0];
+        const gameAppId = latestGame.appid;
+        const gameImage = latestGame.img_icon_url;
+        const gameName = latestGame.name;
+        // The playtime numbers are in minutes:
+        const gameWeeks = Math.round(parseInt(latestGame.playtime_2weeks) / 60);
+        const gameAll = Math.round(parseInt(latestGame.playtime_forever) / 60);
+        // Changing elements on website:
+        latestGameCover.src = "http://media.steampowered.com/steamcommunity/public/images/apps/" + gameAppId + "/" + gameImage + ".jpg";
+        latestGameCover.alt = gameName;
+        latestGameTitle.innerHTML = "Latest game: <b>" + gameName + "</b>";
+        latestGameWeeks.innerHTML = "Time played in the last 2 weeks: <b>" + gameWeeks + " hours</b>";
+        latestGameAll.innerHTML = "Time played total: <b>" + gameAll + " hours</b>";
+    }
     return;
 }
 
