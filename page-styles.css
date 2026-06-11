@@ -159,10 +159,16 @@ h1 {
 
 /* IMAGE FORMATTING */
 
-img:not(.extraImage) {
+img:not(.extraImage):not(.mediaInline) {
     max-height: 50px;
     max-width: 50px;
     padding-bottom: 10px;
+}
+
+.mediaInline {
+    vertical-align: bottom; 
+    margin-right: 5px; 
+    padding: 0px;
 }
 
 .media {
